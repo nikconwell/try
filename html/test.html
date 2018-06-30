@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>New Web Project</title>
+    </head>
+    <body>
+        <h1>New Web Project Page</h1>
+	Min Number:
+	<input id="minnum" type="number" />
+        Max Number:
+        <input id="maxnum" type="number" />
+        Seconds of delay:
+        <input id="delay" type="number" />
+
+        <br />
+        <button type="button" onclick="go()">
+            Go!
+        </button>
+
+        <button type="button" onclick="stop()">
+            Stop!
+        </button>
+
+        <p id="message1">
+
+        </p>
+        <p id="message2">
+
+        </p>
+        <p id="message3" style="font-size: 200px">
+
+        </p>
+
+        <script>
+			var interval;
+
+ 			function go() {
+				var minnum = document.getElementById("minnum").value;
+				var maxnum = document.getElementById("maxnum").value;
+				var delay = document.getElementById("delay").value;
+				document.getElementById("message1").innerHTML = "you typed in minnum=" + minnum + " maxnum=" + maxnum + " and delay=" + delay + "";
+				clearInterval(interval);
+				update();
+				interval = setInterval(function() {
+					update();
+				}, delay * 1000);
+
+ 			}
+			
+			function stop() {
+			    clearInterval(interval);
+			}
+
+ 			var prevnum = -1;
+			function update() {
+				var minnum = Math.ceil(document.getElementById("minnum").value);
+				var maxnum = Math.floor(document.getElementById("maxnum").value);
+				var number;
+				do {
+					number = Math.floor(Math.random() * (maxnum - minnum + 1)) + minnum;
+				} while (number == prevnum);
+				document.getElementById("message2").innerHTML = "random number returned is " + number + "";
+				document.getElementById("message3").innerHTML = number;
+				// document.getElementById("message3").style.fontSize="xx-large";
+				prevnum = number;
+			}
+        </script>
+
+    </body>
+</html>
