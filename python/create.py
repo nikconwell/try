@@ -8,7 +8,7 @@ from pathlib import Path
 
 parser = argparse.ArgumentParser(description='Create stack at AWS')
 parser.add_argument('JSON', nargs=1, type=argparse.FileType('r'), help='JSON parameters file for overriding template')
-parser.add_argument('--template', type=argparse.FileType('r'),    help='Stack template (if not specified assumes $CWD or parent)')
+parser.add_argument('--template', type=argparse.FileType('r'),    help='Stack template (if not specified assumes main.yaml in $CWD or parent)')
 parser.add_argument('--stackname', type=str,                      help='Name of stack, normally determined from JSON filename but can override here')
 parser.add_argument('--region',   type=str, default='us-east-1',  help='Region to create in (%(default)s)')
 parser.add_argument('--iam', action='store_true',                 help='Use IAM security credentials')
