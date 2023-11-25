@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import jaro
 import argparse
 
@@ -14,7 +16,6 @@ args = argParser.parse_args()
 
 input = args.string
 print(f'Input: {input}')
-
 
 best_match = -1
 best_match_index = -1
