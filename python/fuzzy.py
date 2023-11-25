@@ -1,4 +1,5 @@
 import jaro
+import argparse
 
 known_good = [
     "This is a test string",
@@ -6,14 +7,21 @@ known_good = [
     "This is something else",
 ]
 
-str1 = "This is something"
+argParser = argparse.ArgumentParser()
+argParser.add_argument('string')
+
+args = argParser.parse_args()
+
+input = args.string
+print(f'Input: {input}')
+
+
 best_match = -1
 best_match_index = -1
 check_index=0
 
-print(f'Input: {str1}')
 for check in known_good:
-    difference = jaro.jaro_winkler_metric(str1,check)
+    difference = jaro.jaro_winkler_metric(input,check)
     if difference > best_match:
         best_match_index = check_index
         best_match = difference
@@ -21,7 +29,7 @@ for check in known_good:
             break
     check_index = check_index + 1
 
-print(f'Best match = {(best_match*100):.0f}% {known_good[best_match_index]}')
+print(f'{(best_match*100):.0f}% {known_good[best_match_index]}')
 
 
 
