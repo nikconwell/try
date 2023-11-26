@@ -20,31 +20,35 @@ argParser.add_argument('--rest', dest='rest', action='store_true', help='Run in 
 
 args = argParser.parse_args()
 
+
+
+#
+# Check against list
+#
+
+def check_list(check,list):
+    best_match = -1
+    best_match_index = -1
+
+    for index in range(len(list)):
+        match = jaro.jaro_winkler_metric(check,list[index])
+        if match > best_match:
+            best_match = match
+            best_match_index = index
+            if best_match == 1:   # 100% match, just end loop now
+                break
+    return(best_match, list[best_match_index])
+
+
+#
+# Main processing
+#
+
+# Single check arg
 if (args.check): 
-    check = args.check
-    print(f'Input: {check}')
-
-
-#
-# Check against known_good
-#
-
-best_match = -1
-best_match_index = -1
-
-for index in range(len(known_good)):
-    match = jaro.jaro_winkler_metric(check,known_good[index])
-    if match > best_match:
-        best_match = match
-        best_match_index = index
-        if best_match == 1:   # 100% match, just end loop now
-            break
-
-#
-# Output results
-#
-
-print(f'{(best_match*100):.0f}% {known_good[best_match_index]}')
+    print(f'Input: {args.check}')
+    (best_match,best_string) = check_list(args.check,known_good)
+    print(f'{(best_match*100):.0f}% {best_string}')
 
 
 
