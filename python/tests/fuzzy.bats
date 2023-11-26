@@ -11,22 +11,22 @@ setup() {
 
 
 @test "Check 100% match -- ./fuzzy.py 'This is a test string'" {
-    run fuzzy.py 'This is a test string'
+    run fuzzy.py --check 'This is a test string'
     assert_output --partial '100% This is a test string' 
 }
 
 @test "Check 97% match -- ./fuzzy.py 'this is a test string'" {
-    run fuzzy.py 'this is a test string'
+    run fuzzy.py --check 'this is a test string'
     assert_output --partial '97% This is a test string' 
 }
 
 @test "Check 81% match -- ./fuzzy.py 'this is some'" {
-    run fuzzy.py 'this is some'
+    run fuzzy.py --check 'this is some'
     assert_output --partial '81% This is something' 
 }
 
 
 @test "Check 50% match -- ./fuzzy.py 'smurf'" {
-    run fuzzy.py 'smurf'
+    run fuzzy.py --check 'smurf'
     assert_output --partial '50% This is something else'
 }
