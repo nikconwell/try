@@ -4,6 +4,11 @@
 import jaro
 import argparse
 
+# For REST API
+# pip3 install flask
+from flask import Flask, jsonify, request
+
+
 known_good = [
     "This is a test string",
     "This is another string",
@@ -48,6 +53,12 @@ if (args.check):
     print(f'Input: {args.check}')
     (best_match,best_string) = check_list(args.check,known_good)
     print(f'{(best_match*100):.0f}% {best_string}')
-
-
-
+elif (args.rest):
+    print("Running as rest service")
+    app = Flask('fuzzy')
+    @app.route("/check/<string:string_to_check>", methods=['PUT'])
+    def check_handler(string_to_check):
+        (best_match,best_string) = check_list(string_to_check,known_good)
+        return f'Received: {string_to_check}, fuzzy match is {(best_match*100):.0f}% {best_string}\n'
+    
+    app.run(debug=True)
