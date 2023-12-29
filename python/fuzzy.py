@@ -67,4 +67,4 @@ elif (args.rest):
         (best_match,best_string) = check_list(string_to_check,known_good)
         return f'Received: {string_to_check}, fuzzy match is {(best_match*100):.0f}% {best_string}\n'
     
-    app.run(debug=True)
+    app.run(debug=False)
