@@ -3,11 +3,17 @@
 # pip3 install jaro-winkler
 import jaro
 import argparse
+# Drive with:
+# ./fuzzy.py --check "stuff"
+
+
 
 # For REST API
 # pip3 install flask
 from flask import Flask, jsonify, request
-
+# Drive with:
+# ./fuzzy.py --rest
+# curl -X PUT 'http://localhost:5000/check/'$( echo "This is a test string"|sed 's/ /%20/g')
 
 known_good = [
     "This is a test string",
