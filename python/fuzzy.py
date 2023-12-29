@@ -35,8 +35,7 @@ def check_list(check,list):
         if match > best_match:
             best_match = match
             best_match_index = index
-            if best_match == 1:   # 100% match, just end loop now
-                break
+            if best_match == 1: break   # 100% match, just end loop now
     return(best_match, list[best_match_index])
 
 
