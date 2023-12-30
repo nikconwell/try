@@ -72,12 +72,17 @@ def check_handler(string_to_check):
 # Main processing
 #
 
-# Single check arg
+#
+# Single check of a string
+#
 if (args.check): 
     print(f'Input: {args.check}')
     (best_match,best_string) = check_list(args.check,known_good)
     print(f'{(best_match*100):.0f}% {best_string}')
 elif (args.rest):
+    #
+    # Run in REST mode, call with something like: curl -X PUT 'http://localhost:5000/check/'$( echo "This is a test string"|sed 's/ /%20/g')
+    #
     print("Running as rest service")
     app = Flask('fuzzy')
     app.add_url_rule("/check/<string:string_to_check>", view_func=check_handler, methods=['PUT'])
