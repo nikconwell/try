@@ -1,12 +1,13 @@
 #!/usr/bin/python3
 
+
+import re
+
 # pip3 install jaro-winkler
 import jaro
 import argparse
 # Drive with:
 # ./fuzzy.py --check "stuff"
-
-
 
 # For REST API
 # pip3 install flask
@@ -24,17 +25,26 @@ known_good = [
 #
 # Args
 #
-
+flask_host='127.0.0.1'
+flask_port='5000'
 argParser = argparse.ArgumentParser()
 argParser.add_argument('--check', dest='check', help='String to check against known good')
-argParser.add_argument('--rest', dest='rest', action='store_true', help='Run in REST mode answering queries')
+argParser.add_argument('--rest', dest='rest', nargs='?', const=f'{flask_host}:{flask_port}', help=f'Run in REST mode answering queries, defaults to {flask_host}:{flask_port}')
+argParser.add_argument('--debug', dest='debug', default=False, action='store_true', help='Debug mode for Flask and other things')
 
 args = argParser.parse_args()
 
-
+#
+# Allow to override the REST flask host and port
+#
+if (args.rest):
+    match = re.search('([^:]*):?(\d*)',args.rest)
+    if (match):
+        flask_host = match.group(1)
+        flask_port = match.group(2)
 
 #
-# Check against list
+# Check a string against list of known good strings
 #
 
 def check_list(check,list):
@@ -51,6 +61,14 @@ def check_list(check,list):
 
 
 #
+# Flask request handler
+#
+def check_handler(string_to_check):
+    (best_match,best_string) = check_list(string_to_check,known_good)
+    return f'Received: {string_to_check}, fuzzy match is {(best_match*100):.0f}% {best_string}\n'
+
+
+#
 # Main processing
 #
 
@@ -62,9 +80,6 @@ if (args.check):
 elif (args.rest):
     print("Running as rest service")
     app = Flask('fuzzy')
-    @app.route("/check/<string:string_to_check>", methods=['PUT'])
-    def check_handler(string_to_check):
-        (best_match,best_string) = check_list(string_to_check,known_good)
-        return f'Received: {string_to_check}, fuzzy match is {(best_match*100):.0f}% {best_string}\n'
+    app.add_url_rule("/check/<string:string_to_check>", view_func=check_handler, methods=['PUT'])
     
-    app.run(debug=False)
+    app.run(debug=args.debug, host=flask_host, port=flask_port)

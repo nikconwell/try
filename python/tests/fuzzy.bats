@@ -11,7 +11,7 @@ function setup() {
 
 function setup_file() {
     # Start a daemon for REST testing
-    ./fuzzy.py --rest &
+    ./fuzzy.py --rest :5001 &
     fuzzypid=$!
 }
 
@@ -19,7 +19,6 @@ function setup_file() {
 function teardown_file() {
     kill ${fuzzypid}
 }
-
 
 
 
@@ -45,14 +44,14 @@ function teardown_file() {
 }
 
 
-@test "Check REST API 100% match -- curl -X PUT 'http://localhost:5000/check/'$( echo 'This is a test string'|sed 's/ /%20/g')" {
+@test "Check REST API 100% match -- curl -X PUT 'http://localhost:5001/check/'$( echo 'This is a test string'|sed 's/ /%20/g')" {
     urlpart=$(echo 'This is a test string'| sed 's/ /%20/g')
-    run curl --silent -X PUT "http://localhost:5000/check/$urlpart"
+    run curl --silent -X PUT "http://localhost:5001/check/$urlpart"
     assert_output --partial 'fuzzy match is 100% This is a test string'
 }
 
-@test "Check REST API  97% match -- curl -X PUT 'http://localhost:5000/check/'$( echo 'this is a test string'|sed 's/ /%20/g')" {
+@test "Check REST API  97% match -- curl -X PUT 'http://localhost:5001/check/'$( echo 'this is a test string'|sed 's/ /%20/g')" {
     urlpart=$(echo 'this is a test string'| sed 's/ /%20/g')
-    run curl --silent -X PUT "http://localhost:5000/check/$urlpart"
+    run curl --silent -X PUT "http://localhost:5001/check/$urlpart"
     assert_output --partial 'fuzzy match is 97% This is a test string'
 }
