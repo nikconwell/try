@@ -22,27 +22,30 @@ function teardown_file() {
 
 
 
-@test "Check 100% match -- ./fuzzy.py 'This is a test string'" {
+@test "Check 100% match -- ./fuzzy.py --check 'This is a test string'" {
     run fuzzy.py --check 'This is a test string'
     assert_output --partial '100% This is a test string' 
 }
 
-@test "Check  97% match -- ./fuzzy.py 'this is a test string'" {
+@test "Check  97% match -- ./fuzzy.py --check 'this is a test string'" {
     run fuzzy.py --check 'this is a test string'
     assert_output --partial '97% This is a test string' 
 }
 
-@test "Check  81% match -- ./fuzzy.py 'this is some'" {
+@test "Check  81% match -- ./fuzzy.py --check 'this is some'" {
     run fuzzy.py --check 'this is some'
     assert_output --partial '81% This is something' 
 }
 
-
-@test "Check  50% match -- ./fuzzy.py 'smurf'" {
+@test "Check  50% match -- ./fuzzy.py --check 'smurf'" {
     run fuzzy.py --check 'smurf'
     assert_output --partial '50% This is something else'
 }
 
+@test "Check  85% match with string override - ./fuzzy.py --good-file ./tests/good-file-1.txt --check 'smurple'" {
+    run fuzzy.py --good-file ./tests/good-file-1.txt --check 'smurple'
+    assert_output --partial '85% purple'
+}
 
 @test "Check REST API 100% match -- curl -X PUT 'http://localhost:5001/check/'$( echo 'This is a test string'|sed 's/ /%20/g')" {
     urlpart=$(echo 'This is a test string'| sed 's/ /%20/g')

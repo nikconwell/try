@@ -30,6 +30,7 @@ flask_port='5000'
 argParser = argparse.ArgumentParser()
 argParser.add_argument('--check', dest='check', help='String to check against known good')
 argParser.add_argument('--rest', dest='rest', nargs='?', const=f'{flask_host}:{flask_port}', help=f'Run in REST mode answering queries, defaults to {flask_host}:{flask_port}')
+argParser.add_argument('--good-file', dest='good_file', help='File to load known good strings from')
 argParser.add_argument('--debug', dest='debug', default=False, action='store_true', help='Debug mode for Flask and other things')
 
 args = argParser.parse_args()
@@ -44,9 +45,16 @@ if (args.rest):
         flask_port = match.group(2)
 
 #
+# Override the list of known_good strings
+#
+if (args.good_file):
+    with open(args.good_file, 'r') as myfile:
+        known_good = myfile.read().splitlines()
+
+
+#
 # Check a string against list of known good strings
 #
-
 def check_list(check,list):
     best_match = -1
     best_match_index = -1
@@ -61,7 +69,7 @@ def check_list(check,list):
 
 
 #
-# Flask request handler
+# Flask request handler for /check
 #
 def check_handler(string_to_check):
     (best_match,best_string) = check_list(string_to_check,known_good)
