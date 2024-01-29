@@ -23,8 +23,7 @@ function setup() {
 
 
 @test "Make sure it runs" {
-    run convert.py
-    assert_output --partial 'Latitude = 42.291409849999994'
-    assert_output --partial 'Longitude = -71.39804914300714'
+    run convert.py '172 HARTFORD ST natick ma'
+    assert_output --partial 'Latitude = 42.291410'
+    assert_output --partial 'Longitude = -71.398049'
 }
-
