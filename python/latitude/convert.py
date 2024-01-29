@@ -13,5 +13,5 @@ getLoc = loc.geocode("172 hartford street natick ma")
 print(getLoc.address)
 
 # printing latitude and longitude
-print("Latitude = ", getLoc.latitude, "\n")
-print("Longitude = ", getLoc.longitude)
+print(f"Latitude = {getLoc.latitude}\n")
+print(f"Longitude = {getLoc.longitude}\n")
