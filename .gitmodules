@@ -4,3 +4,9 @@
 [submodule "python/test/test_helper/bats-assert"]
 	path = python/tests/test_helper/bats-assert
 	url = https://github.com/bats-core/bats-assert.git
+[submodule "python/latitude/tests/test_helper/bats-support"]
+	path = python/latitude/tests/test_helper/bats-support
+	url = https://github.com/bats-core/bats-support.git
+[submodule "python/latitude/tests/test_helper/bats-assert"]
+	path = python/latitude/tests/test_helper/bats-assert
+	url = https://github.com/bats-core/bats-assert.git
