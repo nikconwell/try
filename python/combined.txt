@@ -1,0 +1,535 @@
+Enrollment Management Analytics
+Faculty Reporting & Analytics
+Student Reporting & Analytics
+Applications Consulting
+Mainframe Application Development
+Small-scale Application Development
+Web Application Development
+Assessment Management Systems
+Course Evaluations
+CourseEval
+Faculty Development & Evaluation System
+Grading Support Tools
+Secure Exams
+Audio/Visual Equipment Reservations
+Audio/Visual Systems Design & Consulting
+Audio/Visual Technical Support & Repairs
+Digital Signage
+Meeting & Event Support
+Webcasting
+FitRec/PERD Systems
+Housing & Dining Systems
+Parking & Transportation Systems
+Vending Systems
+Financial Reporting & Analytics
+Grants Management PI Reporting
+Human Resource Reporting & Analytics
+CAMMS (Computer Aided Maintenance Management System)
+Campus Density Mapping
+Facilities & Construction Project Management
+Space Management
+Alarm Monitoring
+BU Emergency Notification System
+Building Security Access Control Systems
+Security Camera System
+Audience Response Systems
+Classroom Audio/Visual Equipment & Support
+Classroom Audio/Visual Equipment Reservations
+Facilities
+Registrar
+BU Google Sites
+Profiles
+SharePoint
+Conference Calling
+Online Meetings
+Video Conferencing
+DMCA Complaint Response
+Sensitive Data Incident Response
+Dashboard Development & Consulting
+111 Cummington Data Center
+881 Commonwealth Data Center
+BUMC Data Center
+MGHPCC
+ALEX - Institutional Business Glossary & Data Catalog
+Data Governance & Stewardship
+Data Architecture & Development
+Data Management Tools
+Reporting & Data Analysis Tools
+Adabas
+MSSQL
+MySQL
+Oracle
+PostgreSQL
+Asset Management System
+Bomgar Remote Support System
+Computer Labs
+Desktop Applications Training
+Desktop Consulting
+Desktop Hardware & Software
+Desktop Printing
+Device Security
+Endpoint Security Management System
+Software Licensing and Distribution
+Alumni Online Community
+DAR Constituent Relationship Management
+Planned Giving
+Adobe Creative Cloud
+OnBase
+Educational Technology Consulting
+Educational Technology Training
+Broadcast E-mail
+BU Google Mail
+Departmental Email
+Exchange on Premises
+Mailing Lists
+Office 365 Outlook
+Secure Email
+Digication
+Foliotek
+My CV
+BUworks Central Portal
+BUworks Finance
+BUworks Governance, Risk, & Compliance (GRC)
+BUworks Human Resources (HCM)
+BUworks Procurement
+BUworks Training
+Cashier
+Compensation
+Talent Management
+Travel Risk Management
+Mainframe Applications
+Graduate Admissions
+LAW Admissions
+MED Admissions
+Clinical Testing Laboratory Information Management System
+Dental Clinical Information Systems
+Occupational Health Services
+Student Health Services
+Authentication Services
+Authorization Services
+Digital Certificates
+Directory Services
+Identity Services
+Job Scheduling
+Lecture Capture
+My Media
+Data Integration
+Integration Platform as a Service - iPaaS
+Blackboard Learn
+edX
+Sakai
+Terrier eDevelopment
+SCOM
+Zenoss
+Applicant Portal
+Student Portal
+Firewall Services
+Netflow Monitoring
+Network Address Translation
+Web Application Firewall
+Domain Name Service (DNS)
+Dynamic Host Configuration Protocol (DHCP)
+Time Synchronization
+Virtual Private Networking (VPN) Concentrator
+Wired Networking
+Wireless Network
+Internal Survey Development & Consulting
+Official & Ad Hoc Reporting
+Public & Compliance Reporting
+Mainframe Central Printing
+Mainframe Local Printing
+Mainframe Online Reports
+MyPrint
+Questrom Printing
+Ricoh Copy, Print, and Imaging Support
+Community Health Monitoring
+Employee Public Health Reporting
+Laboratory Operations Monitoring
+Student Public Health Reporting
+EZproxy
+Virtual Private Network (VPN)
+Animal Care & Use Information Systems
+Animal Science Center Information Systems
+Environmental Health & Safety Management
+Frozen Specimen Tracking
+Research Information Management System (RIMS)
+Research Proposal Development & Management
+Research Study Survey Tool
+Researcher Conflict of Interest Administration
+ENG Research Servers
+Questrom Research Servers
+Research Computing Software
+Shared Computing Cluster (SCC)
+Research Computing Consulting
+Research Computing Training
+OpenBU
+Visualization Facilities
+Visualization Software
+Security Awareness & Training
+Policy, Compliance, & Risk Assessment
+Research System Security Planning
+Security Architecture Review & Consulting
+AWS
+Azure
+Mainframe
+Oracle Cloud Infrastructure
+SAP
+Solaris
+Standalone Physical Server
+Virtual Private Cloud
+File Integrity Monitoring
+Log Monitoring & Analytics
+Permissions Management & Data Loss Prevention
+Server Patch Management
+Vulnerability Management
+ServiceNow Customer Service Management
+ServiceNow IT Service Management
+Room Scheduler
+Cloud File Storage
+Data Archiving
+Desktop Backup & Restore
+Media Destruction
+Network File Storage
+Server Backup & Restore
+Admissions
+AdvisorTrac
+Curriculum Management
+Degree Advice
+Faculty/Staff Self Service
+Field/Clinical Placement Management
+Financial Aid
+Global Services
+MET Non-Credit
+Orientation
+Questrom Connect
+Student Accounts & Collections
+Student Athlete Academic Support
+Student Employment Systems
+Student Records
+Student Recruitment
+Automated Attendant
+BU Cellular Services
+Call Distribution
+Telecommunications Billing Management
+Telephone Lines, Equipment, and Carrier Service
+Telephone Repair
+Voice Messaging
+Xfinity on Campus
+Xfinity Stream for Departments
+Business Link
+Executive Link
+Faculty Link
+Faculty/Staff Link
+Police Link
+ShareLink
+Student Link
+Websites on blogs.bu.edu
+Websites on class.bu.edu
+Websites on people.bu.edu
+Websites on questromworld.bu.edu
+Websites on sites.bu.edu
+Websites on www.bu.edu
+Websites on www.bumc.bu.edu
+Academic Reporting & Analytics
+Academic Reporting & Analytics
+Academic Reporting & Analytics
+Application Development
+Application Development
+Application Development
+Application Development
+Assessment Systems
+Assessment Systems
+Assessment Systems
+Assessment Systems
+Assessment Systems
+Assessment Systems
+Audio/Visual Services
+Audio/Visual Services
+Audio/Visual Services
+Audio/Visual Services
+Audio/Visual Services
+Audio/Visual Services
+Auxiliary Systems
+Auxiliary Systems
+Auxiliary Systems
+Auxiliary Systems
+Business Reporting & Analytics
+Business Reporting & Analytics
+Business Reporting & Analytics
+Campus Operations Systems
+Campus Operations Systems
+Campus Operations Systems
+Campus Operations Systems
+Campus Safety Services
+Campus Safety Services
+Campus Safety Services
+Campus Safety Services
+Classroom Technology & Support
+Classroom Technology & Support
+Classroom Technology & Support
+Classroom Technology & Support
+Classroom Technology & Support
+Collaboration Services
+Collaboration Services
+Collaboration Services
+Conferencing
+Conferencing
+Conferencing
+Cyber Security Incident Response
+Cyber Security Incident Response
+Dashboards & Visualization
+Data Center
+Data Center
+Data Center
+Data Center
+Data Governance & Literacy
+Data Governance & Literacy
+Data Services & Tools
+Data Services & Tools
+Data Services & Tools
+Database Services
+Database Services
+Database Services
+Database Services
+Database Services
+Desktop Computing
+Desktop Computing
+Desktop Computing
+Desktop Computing
+Desktop Computing
+Desktop Computing
+Desktop Computing
+Desktop Computing
+Desktop Computing
+Desktop Computing
+Development and Alumni Systems
+Development and Alumni Systems
+Development and Alumni Systems
+Digital Multimedia Production
+Document Imaging & Management
+Educational Technology Consulting & Training
+Educational Technology Consulting & Training
+Email & Calendaring
+Email & Calendaring
+Email & Calendaring
+Email & Calendaring
+Email & Calendaring
+Email & Calendaring
+Email & Calendaring
+e-Portfolio Sites
+e-Portfolio Sites
+Faculty Systems
+Finance/HR/Procurement Systems
+Finance/HR/Procurement Systems
+Finance/HR/Procurement Systems
+Finance/HR/Procurement Systems
+Finance/HR/Procurement Systems
+Finance/HR/Procurement Systems
+Finance/HR/Procurement Systems
+Finance/HR/Procurement Systems
+Finance/HR/Procurement Systems
+Finance/HR/Procurement Systems
+GALAXY
+Graduate Recruitment & Admission Systems
+Graduate Recruitment & Admission Systems
+Graduate Recruitment & Admission Systems
+Health Applications
+Health Applications
+Health Applications
+Health Applications
+Identity & Access Management (IAM)
+Identity & Access Management (IAM)
+Identity & Access Management (IAM)
+Identity & Access Management (IAM)
+Identity & Access Management (IAM)
+Infrastructure Operations Management
+Instructional Video Services
+Instructional Video Services
+Integration Services
+Integration Services
+Learning Management Systems
+Learning Management Systems
+Learning Management Systems
+Learning Management Systems
+Monitoring
+Monitoring
+MyBU
+MyBU
+Network Security Services
+Network Security Services
+Network Security Services
+Network Security Services
+Network Services
+Network Services
+Network Services
+Network Services
+Network Services
+Network Services
+Official University Information Reporting
+Official University Information Reporting
+Official University Information Reporting
+Printing
+Printing
+Printing
+Printing
+Printing
+Printing
+Public Health Data Reporting & Analytics
+Public Health Data Reporting & Analytics
+Public Health Data Reporting & Analytics
+Public Health Data Reporting & Analytics
+Remote Access Services
+Remote Access Services
+Research Administration Systems
+Research Administration Systems
+Research Administration Systems
+Research Administration Systems
+Research Administration Systems
+Research Administration Systems
+Research Administration Systems
+Research Administration Systems
+Research Computation
+Research Computation
+Research Computation
+Research Computation
+Research Consulting & Training
+Research Consulting & Training
+Research Sites
+Research Visualization
+Research Visualization
+Security Education
+Security Policy & Consulting Services
+Security Policy & Consulting Services
+Security Policy & Consulting Services
+Server Infrastructure
+Server Infrastructure
+Server Infrastructure
+Server Infrastructure
+Server Infrastructure
+Server Infrastructure
+Server Infrastructure
+Server Infrastructure
+Server Security Services
+Server Security Services
+Server Security Services
+Server Security Services
+Server Security Services
+Service Management Systems
+Service Management Systems
+Space Reservations
+Storage & Backup Services
+Storage & Backup Services
+Storage & Backup Services
+Storage & Backup Services
+Storage & Backup Services
+Storage & Backup Services
+Student Systems
+Student Systems
+Student Systems
+Student Systems
+Student Systems
+Student Systems
+Student Systems
+Student Systems
+Student Systems
+Student Systems
+Student Systems
+Student Systems
+Student Systems
+Student Systems
+Student Systems
+Student Systems
+Telephone Services
+Telephone Services
+Telephone Services
+Telephone Services
+Telephone Services
+Telephone Services
+Telephone Services
+Television
+Television
+The Links
+The Links
+The Links
+The Links
+The Links
+The Links
+The Links
+Websites
+Websites
+Websites
+Websites
+Websites
+Websites
+Websites
+Dept: 660 Corp
+Dept: Arena Management / Athletics
+Dept: Art Gallery
+Dept: Bioinformatics
+Dept: Budget Office
+Dept: BUMC
+Dept: BUPD
+Dept: BU Spark
+Dept: CAS
+Dept: CELOP/Filemaker
+Dept: CFA/Filemaker
+Dept: CGS
+Dept: COM
+Dept: CPO
+Dept: Danielsen
+Dept: Development and Alumni Systems
+Dept: DOM
+Dept: EdTech
+Dept: EHS
+Dept: Emergency Preparedness/samorash
+Dept: ENC
+Dept: ENG
+Dept: Engineering and Building Systems
+Dept: ENSA
+Dept: Events & Conferences
+Dept: Facilities Management and Planning
+Dept: FSAO
+Dept: Global Programs
+Dept: GRS
+Dept: Hariri
+Dept: Howard Gotlieb
+Dept: Internal Audit
+Dept: LAW
+Dept: Library
+Dept: Math
+Dept: MET
+Dept: Microbiology
+Dept: NEIDL
+Dept: OGC
+Dept: Parking & Transportation Services
+Dept: Photo Services
+Dept: Questrom
+Dept: Rental Properties
+Dept: Research - COVID-19 Testing Laboratory
+Dept: SAR
+Dept: SDM
+Dept: SED
+Dept: SHS
+Dept: Slone
+Dept: SPH
+Dept: SSW
+Dept: STH
+Dept: VPFA
+IS&T Applications
+IS&T AS&IR
+IS&T Client Services and Support
+IS&T DB Administration
+IS&T DLI
+IS&T Enterprise Architecture
+IS&T IAM
+IS&T InfoSec
+IS&T NSG
+IS&T QA
+IS&T RCS
+IS&T Reporting
+IS&T Server Admin
+IS&T Solution Architecture
+IS&T Storage Admin
+IS&T Systems Engineering
+IS&T Technology Architecture
+RCS Client
