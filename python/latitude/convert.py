@@ -1,5 +1,10 @@
 #!/home/nik/github/try/python/latitude/bin/python
 
+# Library to convert addresses
+# pip install geopy
+from geopy.geocoders import Nominatim
+
+
 import argparse
 import re
 
@@ -22,8 +27,6 @@ if (not re.search('natick', address)):
     address+= ", natick, ma"
     print(f"(Added in town) >>>{address}<<<")
 
-# Library to convert addresses
-from geopy.geocoders import Nominatim
 loc = Nominatim(user_agent="Geopy Library")
 
 # Convert address entered
